@@ -51,9 +51,9 @@ class _HomeState extends State<Home> {
           }
           return ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              return/* index >= state.posts.length
+              return index >= state.posts.length
                   ? BottomLoader()
-                  :*/ PostWidget(post: state.posts[index]);
+                  : PostWidget(post: state.posts[index]);
             },
             itemCount: state.hasReachedMax
                 ? state.posts.length
